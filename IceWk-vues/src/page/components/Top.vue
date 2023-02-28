@@ -285,22 +285,22 @@
             to="/post/all"
             >文章</router-link
           >
-          <router-link
-            target="_self"
-            class="nav-link display-top"
-            :class="message5"
-            data-v-1f33282a=""
-            to="/planet"
-            >圈子</router-link
-          >
-          <router-link
-            target="_self"
-            class="nav-link "
-            :class="message4"
-            data-v-1f33282a=""
-            to="/class"
-            >分类</router-link
-          >
+<!--          <router-link-->
+<!--            target="_self"-->
+<!--            class="nav-link display-top"-->
+<!--            :class="message5"-->
+<!--            data-v-1f33282a=""-->
+<!--            to="/planet"-->
+<!--            >圈子</router-link-->
+<!--          >-->
+<!--          <router-link-->
+<!--            target="_self"-->
+<!--            class="nav-link "-->
+<!--            :class="message4"-->
+<!--            data-v-1f33282a=""-->
+<!--            to="/class"-->
+<!--            >分类</router-link-->
+<!--          >-->
         </div>
         <div
           class="app-header-search grid-list lazy-transition"
@@ -791,7 +791,7 @@ this.$router.go(0)
       this.userJudje = (user == null)
       //获取会员有效性
       CheckVip(user.data.userid).then(resp => {
-        if(resp.data){ 
+        if(resp.data){
           this.vipTrue = true
         }
       })
@@ -865,9 +865,9 @@ this.$router.go(0)
     search(seachcontents) {
       //限制查询五个数据
       if (!this.judgeNull(this.seachcontent)) {
-        if (this.fundByresource) { 
+        if (this.fundByresource) {
           this.Findresource(seachcontents, 5) }
-        else { 
+        else {
           this.Findarticles(seachcontents, 5) }
 
       }

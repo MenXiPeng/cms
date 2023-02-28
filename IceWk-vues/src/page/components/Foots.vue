@@ -6,9 +6,9 @@
           <div class="row gy-4">
             <div class="col-lg-1">
               <div class="widget-about">
-                <h3 class="footer-heading">关于</h3>
+                <h3 class="footer-heading">声明</h3>
                 <p class="body-text">
-                 资讯、资源、社交、商城、圈子、导航等多功能CMS我们只认真做好一个网站。致力建设社交、资讯、资源类站点！
+                  本站所有软件均来源于互联网和网友推荐收集而来，仅供学习和研究使用，如需用于商业用途，请购买正版。如有侵权，请来信联系我们，我们立即删除：
                 </p>
               </div>
             </div>
@@ -26,37 +26,38 @@
               <div class="widget-categories">
                 <h3 class="footer-heading">特色功能</h3>
                 <div class="categories-tags">
-                  <a href="single-post.html" class="active">圈子 </a
-                  ><a href="single-post.html">资讯快讯 </a
-                  ><a href="single-post.html">帮助中心 </a
-                  ><a href="single-post.html">积分兑换 </a
-                  ><a href="single-post.html">会员购买 </a
-                  ><a href="single-post.html">购物商城 </a
-                  ><a href="single-post.html">软件下载 </a
-                  ><a href="single-post.html">推广中心 </a
-                  ><a href="single-post.html">财富管理 </a
-                  ><a href="single-post.html">任务中心 </a
-                  ><a href="single-post.html">私信列表 </a
-                  ><a href="single-post.html">友链申请 </a
-                  ><a href="single-post.html">认证服务 </a
-                  ><a href="single-post.html">推广中心 </a>
+                  <a>敬请期待...</a>
+<!--                  <a href="single-post.html" class="active">圈子 </a-->
+<!--                  ><a href="single-post.html">资讯快讯 </a-->
+<!--                  ><a href="single-post.html">帮助中心 </a-->
+<!--                  ><a href="single-post.html">积分兑换 </a-->
+<!--                  ><a href="single-post.html">会员购买 </a-->
+<!--                  ><a href="single-post.html">购物商城 </a-->
+<!--                  ><a href="single-post.html">软件下载 </a-->
+<!--                  ><a href="single-post.html">推广中心 </a-->
+<!--                  ><a href="single-post.html">财富管理 </a-->
+<!--                  ><a href="single-post.html">任务中心 </a-->
+<!--                  ><a href="single-post.html">私信列表 </a-->
+<!--                  ><a href="single-post.html">友链申请 </a-->
+<!--                  ><a href="single-post.html">认证服务 </a-->
+<!--                  ><a href="single-post.html">推广中心 </a>-->
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 ">
-              <div class="widget-search">
-                <h3 class="footer-heading">搜索</h3>
-                <p class="body-text">您想要的这里都有</p>
-                <div class="widget-search-box">
-                  <input type="text" v-model="seachcontent" placeholder="输入内容" />
-                  <button
-                  @click="queryssubmit()" class="search-btn"
-                  >
-                    <i  class="fas el-icon-search"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
+<!--            <div class="col-lg-3 ">-->
+<!--              <div class="widget-search">-->
+<!--                <h3 class="footer-heading">搜索</h3>-->
+<!--                <p class="body-text">您想要的这里都有</p>-->
+<!--                <div class="widget-search-box">-->
+<!--                  <input type="text" v-model="seachcontent" placeholder="输入内容" />-->
+<!--                  <button-->
+<!--                  @click="queryssubmit()" class="search-btn"-->
+<!--                  >-->
+<!--                    <i  class="fas el-icon-search"></i>-->
+<!--                  </button>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
           </div>
         </div>
       </div>
@@ -257,7 +258,7 @@ export default {
           this.$router.push({
           path: `/list/${this.seachcontent}/all`,
         })
-       
+
       }
     },
   },

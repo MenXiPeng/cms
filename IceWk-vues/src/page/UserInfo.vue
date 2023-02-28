@@ -140,11 +140,9 @@
                             <div :class="acticveChanceHui">
                               <a class="link-block"></a>
                               <p>
-                                <i
-                                  class="
+                                <i class="
                                     b2font
-                                    b2-hand-heart-line b2-light b2-color
-                                  "
+                                    b2-hand-heart-line b2-light b2-color"
                                 ></i
                                 >会员中心
                               </p>
@@ -164,8 +162,7 @@
                                     b2font
                                     b2-heart-add-line b2-light b2-color
                                   "
-                                ></i
-                                >充值中心
+                                ></i>充值中心
                               </p>
                               <div class="author-sidebar-down">
                                 <i class="b2font b2-arrow-right-s-line"></i>
