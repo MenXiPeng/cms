@@ -8,27 +8,29 @@
           <div class="pay-button-box">
             <div @click="selectPayTypeLogin('alipay')" class="pay-item" id="alipay" data-type="1">
               <img style="margin-right: 14px" height="40" width="40"
-                src="../static/image/pay/zhifubaorenzheng.svg" /><span>支付宝</span>
+                   src="../static/image/pay/zhifubaorenzheng.svg"/><span>支付宝</span>
             </div>
             <div @click="selectPayTypeLogin('wxpay')" class="pay-item" id="weixinpay" data-type="2">
               <img style="margin: 12px" height="40" width="40"
-                src="../static/image/pay/weixinzhifu.svg" /><span>微信支付</span>
+                   src="../static/image/pay/weixinzhifu.svg"/><span>微信支付</span>
             </div>
             <div @click="selectPayTypeLogin('wxpay')" class="pay-item" id="weixinpay" data-type="2">
-              <img style="margin: 12px" height="40" width="40" src="../static/image/pay/jifen.svg" /><span>积分支付</span>
+              <img style="margin: 12px" height="40" width="40"
+                   src="../static/image/pay/jifen.svg"/><span>积分支付</span>
             </div>
           </div>
           <p style="font-size: 13px; padding: 0; margin: 0"></p>
         </div>
-        <input class="swal2-input" style="display: none" /><input type="file" class="swal2-file"
-          style="display: none" />
+        <input class="swal2-input" style="display: none"/><input type="file" class="swal2-file"
+                                                                 style="display: none"/>
         <div class="swal2-range" style="display: none">
-          <input type="range" /><output></output>
+          <input type="range"/>
+          <output></output>
         </div>
         <select class="swal2-select" style="display: none"></select>
         <div class="swal2-radio" style="display: none"></div>
-        <label for="swal2-checkbox" class="swal2-checkbox" style="display: none"><input type="checkbox" /><span
-            class="swal2-label"></span></label><textarea class="swal2-textarea" style="display: none"></textarea>
+        <label for="swal2-checkbox" class="swal2-checkbox" style="display: none"><input type="checkbox"/><span
+          class="swal2-label"></span></label><textarea class="swal2-textarea" style="display: none"></textarea>
         <div class="swal2-validation-message" id="swal2-validation-message" style="display: none"></div>
       </div>
     </el-dialog>
@@ -40,26 +42,27 @@
           <div class="pay-button-box">
             <div @click="selectPayType('alipay')" class="pay-item" id="alipay" data-type="1">
               <img style="margin-right: 14px" height="40" width="40"
-                src="../static/image/pay/zhifubaorenzheng.svg" /><span>支付宝</span>
+                   src="../static/image/pay/zhifubaorenzheng.svg"/><span>支付宝</span>
             </div>
             <div @click="selectPayType('wxpay')" class="pay-item" id="weixinpay" data-type="2">
               <img style="margin: 12px" height="40" width="40"
-                src="../static/image/pay/weixinzhifu.svg" /><span>微信支付</span>
+                   src="../static/image/pay/weixinzhifu.svg"/><span>微信支付</span>
             </div>
           </div>
           <p style="font-size: 13px; padding: 0; margin: 0">
             当前为游客购买模式
           </p>
         </div>
-        <input class="swal2-input" style="display: none" /><input type="file" class="swal2-file"
-          style="display: none" />
+        <input class="swal2-input" style="display: none"/><input type="file" class="swal2-file"
+                                                                 style="display: none"/>
         <div class="swal2-range" style="display: none">
-          <input type="range" /><output></output>
+          <input type="range"/>
+          <output></output>
         </div>
         <select class="swal2-select" style="display: none"></select>
         <div class="swal2-radio" style="display: none"></div>
-        <label for="swal2-checkbox" class="swal2-checkbox" style="display: none"><input type="checkbox" /><span
-            class="swal2-label"></span></label><textarea class="swal2-textarea" style="display: none"></textarea>
+        <label for="swal2-checkbox" class="swal2-checkbox" style="display: none"><input type="checkbox"/><span
+          class="swal2-label"></span></label><textarea class="swal2-textarea" style="display: none"></textarea>
         <div class="swal2-validation-message" id="swal2-validation-message" style="display: none"></div>
       </div>
     </el-dialog>
@@ -67,18 +70,18 @@
     <div>
       <el-dialog :visible.sync="wxDialogVisible" :show-close="false" @close="closeDialog" width="320px" center>
         <h5 class="outh5">
-          <img src="../static/image/pay/weixinbig.png" class="alipaybig_icon" />
+          <img src="../static/image/pay/weixinbig.png" class="alipaybig_icon"/>
         </h5>
         <h5 class="outh5">
           <div class="bottom alipay">使用扫码支付 {{ price / 100 }}元</div>
         </h5>
         <h5 class="outh5">
-          <qriously :value="codeUrl" :size="190" />
+          <qriously :value="codeUrl" :size="190"/>
         </h5>
         <div style="height: 40px"></div>
         <h5 class="outh7">
           <div style="color: #e0e0e0" class="bottom alipay">
-            请使用微信扫一扫<br />扫描二维码支付<br />
+            请使用微信扫一扫<br/>扫描二维码支付<br/>
           </div>
         </h5>
       </el-dialog>
@@ -87,18 +90,18 @@
     <div>
       <el-dialog :visible.sync="aliDialogVisible" :show-close="false" @close="closeDialog" width="320px" center>
         <h5 class="outh5">
-          <img src="../static/image/pay/alipaybig.png" class="alipaybig_icon" />
+          <img src="../static/image/pay/alipaybig.png" class="alipaybig_icon"/>
         </h5>
         <h5 class="outh5">
           <div class="bottom alipay">使用扫码支付 {{ price / 100 }}元</div>
         </h5>
         <h5 class="outh5">
-          <qriously :value="codeUrl" :size="190" />
+          <qriously :value="codeUrl" :size="190"/>
         </h5>
         <div style="height: 40px"></div>
         <h5 class="outh6">
           <div style="color: #e0e0e0" class="bottom alipay">
-            请使用支付宝扫一扫<br />扫描二维码支付<br />
+            请使用支付宝扫一扫<br/>扫描二维码支付<br/>
           </div>
         </h5>
       </el-dialog>
@@ -107,54 +110,34 @@
       <!---->
       <div id="__layout">
         <div data-fetch-key="0" class="app light macwk-animation">
-          <top :message2="acticve" />
+          <top :message2="acticve"/>
           <div class="overflow-hidden pt-5">
             <div class="layout-header pt-5 pb-5 position-relative pc-model">
               <!-- ../static/image/loding.gif -->
               <div>
-                <img src="../static/image/shape-1.svg" class="shape-three" /><img src="../static/image/shape-55.svg"
-                  class="shape-four" /><img src="../static/image/shape-56.svg" class="shape-five" /><img
-                  src="../static/image/shape-57.svg" class="shape-six" /><img src="../static/image/shape-58.svg"
-                  class="shape-seven" /><img src="../static/image/shape-59.svg" class="shape-eight" /><img
-                  src="../static/image/shape-60.svg" class="shape-nine" /><img src="../static/image/shape-61.svg"
-                  class="shape-ten" /><img src="../static/image/shape-62.svg" class="shape-eleven" /><img
-                  src="../static/image/shape-10.svg" class="shape-10" /><img src="../static/image/shape-11.svg"
-                  class="shape-11" />
+                <img src="../static/image/shape-1.svg" class="shape-three"/><img src="../static/image/shape-55.svg"
+                                                                                 class="shape-four"/><img
+                src="../static/image/shape-56.svg" class="shape-five"/><img
+                src="../static/image/shape-57.svg" class="shape-six"/><img src="../static/image/shape-58.svg"
+                                                                           class="shape-seven"/><img
+                src="../static/image/shape-59.svg" class="shape-eight"/><img
+                src="../static/image/shape-60.svg" class="shape-nine"/><img src="../static/image/shape-61.svg"
+                                                                            class="shape-ten"/><img
+                src="../static/image/shape-62.svg" class="shape-eleven"/><img
+                src="../static/image/shape-10.svg" class="shape-10"/><img src="../static/image/shape-11.svg"
+                                                                          class="shape-11"/>
               </div>
               <div class="container">
                 <div class="row align-items-center">
-                  <div class="col-xs-12 col-lg-6 col-xl-6 text-center">
 
-                    <div v-if="carouselNum === 0" class="device-frame">
-                      <el-carousel height="350px">
-                        <el-carousel-item v-for="item in 1" :key="item">
-                          <img style="height: 349px; width: 576px" :src="thumb" /><img />
-                        </el-carousel-item>
-                      </el-carousel>
-                    </div>
-                    <div v-else class="device-frame">
-                      <el-carousel style="    border-radius: 21px;
-" height="350px">
-                        <el-carousel-item v-for="item in carousel" :key="item">
-                          <img style="height: 349px; width: 576px" :src="item.url" /><img />
-                        </el-carousel-item>
-                      </el-carousel>
-                    </div>
-                    <div class="device-stripe"></div>
-                    <div class="device-header"></div>
-                    <div class="device-sensors"></div>
-                    <div class="device-btns"></div>
-                    <div class="device-power"></div>
-                    <!---->
-
-                  </div>
                   <div class="col-xs-12 col-lg-6 col-xl-6">
                     <div class="header-app">
-                      <img class="app-icon mr-3" />
+                      <img class="app-icon mr-3"/>
                       <div class="list-body">
 
                         <h3 style="font-size: 30px;font-weight: 700;
 text-rendering: optimizeLegibility;"> {{ this.title }}</h3>
+
                         <p style="font-size: 15px;
 line-height: 28px;font-weight: 400;" class="mg-bt-42">{{ this.intro }}</p>
 
@@ -184,30 +167,32 @@ line-height: 28px;font-weight: 400;" class="mg-bt-42">{{ this.intro }}</p>
                         </div>
 
                         <div class="mb-15">
-                          <a v-if="this.price != 0">
-                            <a v-if="payJudej" @click="Download()" data-toggle="modal" data-target="#popup_bid"
-                              class="sc-button style letter style-2 style-item-details"><span
-                                style="color: #ffffff;font-weight: 700;"><i class="el-icon-download"></i>支付购买</span>
-                            </a>
-                            <a v-else @click="NowDownload()" data-toggle="modal" data-target="#popup_bid"
-                              class="sc-button style letter style-2 style-item-details"><span
-                                style="color: #ffffff;font-weight: 700;"><i
-                                  class="el-icon-download"></i>立即购买(已支付)</span>
-                            </a>
+
+                          <!--                          <a v-if="this.price != 0">-->
+                          <!--                            <a v-if="payJudej" @click="Download()" data-toggle="modal" data-target="#popup_bid"-->
+                          <!--                              class="sc-button style letter style-2 style-item-details"><span-->
+                          <!--                                style="color: #ffffff;font-weight: 700;"><i class="el-icon-download"></i>支付购买</span>-->
+                          <!--                            </a>-->
+                          <!--                            <a v-else @click="NowDownload()" data-toggle="modal" data-target="#popup_bid"-->
+                          <!--                              class="sc-button style letter style-2 style-item-details"><span-->
+                          <!--                                style="color: #ffffff;font-weight: 700;"><i-->
+                          <!--                                  class="el-icon-download"></i>立即购买(已支付)</span>-->
+                          <!--                            </a>-->
+                          <!--                          </a>-->
+                          <!--                          -->
+                          <!--                          <a v-else>-->
+                          <a @click="NowDownload()" data-toggle="modal" data-target="#popup_bid"
+                             class="sc-button style letter style-2 style-item-details"><span
+                            style="color: #ffffff;font-weight: 700;"><i class="el-icon-download"></i>立即下载</span>
                           </a>
-                          <a v-else>
-                            <a @click="NowDownload()" data-toggle="modal" data-target="#popup_bid"
-                              class="sc-button style letter style-2 style-item-details"><span
-                                style="color: #ffffff;font-weight: 700;"><i class="el-icon-download"></i>立即下载</span>
-                            </a>
-                          </a>
+                          <!--                          </a>-->
                           <button v-if="!lovecheck" @click="loveClick()" class="
                               btn btn-outline-theme btn-round
                               px-5
                               zanUp
                               position-relative
                             ">
-                            <img class="dianzan" src="../static/image/dianzan.svg" />
+                            <img class="dianzan" src="../static/image/dianzan.svg"/>
                             赞 ({{ loveNum }})
                             <span class="likeanimation">+1</span>
                           </button>
@@ -217,124 +202,16 @@ line-height: 28px;font-weight: 400;" class="mg-bt-42">{{ this.intro }}</p>
                               zanUp
                               position-relative
                             ">
-                            <img class="dianzan" src="../static/image/dianzanred.svg" />
+                            <img class="dianzan" src="../static/image/dianzanred.svg"/>
                             赞 ({{ loveNum }})
                             <span class="likeanimation">+1</span>
                           </button>
                         </div>
 
-                        <div class="mt-4 mb-6">
-                          <div class="flat-tabs themesflat-tabs">
-                            <ul class="menu-tab tab-title">
-                              <li class="item-title titleactive">
-                                <span class="inner">最近购买</span>
-                              </li>
-                              <li class="item-title">
-                                <span class="inner">历史</span>
-                              </li>
-                              <li class="item-title">
-                                <span class="inner">用户</span>
-                              </li>
-                            </ul>
-                            <div class="content-tab">
-                              <div class="content-inner tab-content" style="">
-                                <ul class="bid-history-list">
-                                  <li>
-                                    <div class="content">
-                                      <s></s>
-                                      <div class="author-item">
-                                        <div class="avatar">
-                                          <el-avatar
-                                            src="https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png">
-                                          </el-avatar>
-                                        </div>
-                                        <div class="infor">
-                                          <p><span>用户 &#8194; &#8194; &#8194; &#8194; </span><span
-                                              style="color:#4FA1FF;"> 代** </span> <span> &#8194; &#8194; &#8194; &#8194;
-                                            </span> 在7分钟前下载</p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </li>
-                                  <li>
-                                    <div class="content">
-                                      <div class="author-item">
-                                        <div class="avatar">
-                                          <el-avatar
-                                            src="https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png">
-                                          </el-avatar>
-                                        </div>
-                                        <div class="infor">
-                                          <p><span>用户 &#8194; &#8194; &#8194; &#8194; </span><span
-                                              style="color:#4FA1FF;"> 王** </span> <span> &#8194; &#8194; &#8194; &#8194;
-                                            </span> 在7分钟前下载</p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </li>
-                                  <li>
-                                    <div class="content">
-                                      <div class="author-item">
-                                        <div class="avatar">
-                                          <el-avatar
-                                            src="https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png">
-                                          </el-avatar>
-                                        </div>
-                                        <div class="infor">
-                                          <p><span>用户 &#8194; &#8194; &#8194; &#8194; </span><span
-                                              style="color:#4FA1FF;"> 李** </span> <span> &#8194; &#8194; &#8194; &#8194;
-                                            </span> 在7分钟前下载</p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div class="content-inner tab-content" style="display: none;">
-                                <ul class="bid-history-list">
-                                  <li>
-                                    <div class="content">
-                                      <div class="client">
-                                        <div class="author-item">
-                                          <div class="avatar">
-                                            <el-avatar
-                                              src="https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png">
-                                            </el-avatar>
-                                          </div>
-                                          <div class="infor">
-                                            <p>Bid listed for <span class="status">25 ETH
-                                                8</span> hours ago
-                                              by <span class="creator">@Johnson</span> </p>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div class="content-inner tab-content" style="display: none;">
-                                <div class="provenance">
-                                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                    industry.
-                                    Lorem Ipsum has been the industry's standard dummy text ever since
-                                    the 1500s,
-                                    when an unknown printer took a galley of type and scrambled it to
-                                    make a type specimen book.
-                                    It has survived not only five centuries, but also the leap into
-                                    electronic typesetting,
-                                    remaining essentially unchanged. It was popularised in the 1960s
-                                    with the release of Letraset sheets containing Lorem Ipsum passages,
-                                    and more recently with desktop publishing software like Aldus
-                                    PageMaker including versions of Lorem Ipsum.</p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
                         <div class="mt-6 fs-13">
                           <!---->
                         </div>
+
                       </div>
                     </div>
                   </div>
@@ -342,6 +219,7 @@ line-height: 28px;font-weight: 400;" class="mg-bt-42">{{ this.intro }}</p>
                 </div>
               </div>
             </div>
+
             <div class="soft-layouts bg mb-8 pc-model">
               <!-- <section class="layout-info">
                 <div class="app-info shadow-2 white bg text-center">
@@ -373,7 +251,7 @@ line-height: 28px;font-weight: 400;" class="mg-bt-42">{{ this.intro }}</p>
                           下载
                         </p>
                         <p
-                        v-if="hits == null" 
+                        v-if="hits == null"
                           class="
                             mb-0
                             fs-20
@@ -382,7 +260,7 @@ line-height: 28px;font-weight: 400;" class="mg-bt-42">{{ this.intro }}</p>
                             opacity-70
                           "
                         >
-                        
+
                           0
                         </p>
                          <p
@@ -395,7 +273,7 @@ line-height: 28px;font-weight: 400;" class="mg-bt-42">{{ this.intro }}</p>
                             opacity-70
                           "
                         >
-                        
+
                           {{ hits }}
                         </p>
                         <p class="text-uppercase fs-10 ls-2 mb-0 opacity-70">
@@ -509,7 +387,7 @@ line-height: 28px;font-weight: 400;" class="mg-bt-42">{{ this.intro }}</p>
                   id="step-read"
                   class="layout-content-install pt-7 mb-5"
                 ></div>
-             
+
                 <div id="step-content" class="layout-content-infos">
                   <div class="container">
                     <div class="content-header">
@@ -542,7 +420,7 @@ line-height: 28px;font-weight: 400;" class="mg-bt-42">{{ this.intro }}</p>
                         <div class="w-c w-c-22">
                           <h3>
                             正文概述
-                           
+
                           </h3>
                         </div>
                       </div>
@@ -553,14 +431,14 @@ line-height: 28px;font-weight: 400;" class="mg-bt-42">{{ this.intro }}</p>
                           <p>{{ intro }}</p>
                         </div>
                       </div>
-                     
+
                     </div>
-                 
+
                     <div id="sidelist" v-html="this.content"></div>
                   </div>
                 </div>
-              
-             
+
+
               </section> -->
               <div class="row gy-5">
                 <div class="col-lg-9">
@@ -579,22 +457,24 @@ line-height: 28px;font-weight: 400;" class="mg-bt-42">{{ this.intro }}</p>
                         </div>
                       </div>
                     </div><!-- Tags -->
-                    <div class="tags">
-                      <h3 class="heading-secondary mar-left">标签</h3>
+<!--                    <div class="tags">-->
+<!--                      <h3 class="heading-secondary mar-left">标签</h3>-->
 
-                      <div class="categories-tags mar-left"><a v-for="item in Mytag" :key="item.id"
-                          :href="'/post/' + item + '/all'">{{ item }} </a>
-                      </div>
-                    </div><!-- Author card -->
+<!--                      <div class="categories-tags mar-left"><a v-for="item in Mytag" :key="item.id"-->
+<!--                                                               :href="'/post/' + item + '/all'">{{ item }} </a>-->
+<!--                      </div>-->
+<!--                    </div>-->
+                    <!-- Author card -->
                     <div class="author-card">
                       <div>
-                        <img class="card-img bg-cover" src="../static/img/ice-gave.png" />
+                        <img class="card-img bg-cover" src="../static/img/ice-gave.png"/>
                       </div>
                       <div class="card-text">
                         <h3 class="heading-secondary">提 示</h3>
                         <p class="body-text">
                           如有下载链接失效或者资源求档，请发送邮件到：snym@snym.cn，客服QQ：23339097。我们收到消息后会尽快回应消息。使用百度网盘下载，请关闭V*P*N，否则会跳转出错。<a
-                            href="https://macoshome.com/course/7692.html">点我查看</a>部分地区蓝奏云下载链接无法访问问题解决。 </p>
+                          href="https://macoshome.com/course/7692.html">点我查看</a>部分地区蓝奏云下载链接无法访问问题解决。
+                        </p>
                       </div>
                     </div><!-- Post navigation -->
                     <div class="post-navigation">
@@ -613,7 +493,7 @@ line-height: 28px;font-weight: 400;" class="mg-bt-42">{{ this.intro }}</p>
                       <router-link :to="'/list/' + nextResource.id">
                         <div class="nav-next">
                           <div class="nav-button-right">下一篇 <span><img src="../static/img/long-arrow.png"
-                                alt="arrow"></span></div>
+                                                                          alt="arrow"></span></div>
                           <div class="nav-post">
                             <h3 class="heading-tertiary">{{ nextResource.title }}</h3>
                             <span class="date body-text">{{ formatDate(nextResource.addTime) }}</span>
@@ -621,95 +501,21 @@ line-height: 28px;font-weight: 400;" class="mg-bt-42">{{ this.intro }}</p>
                         </div>
                       </router-link>
                     </div><!-- Comments -->
-                    <!-- <div class="post-comments">
-                            <h3 class="heading-secondary">Comments(3)</h3>
-                            <div class="comment-card">
-                                <div class="card-top">
-                                    <div class="card-meta">
-                                        <div class="meta-item post-author">
-                                            <div class="author-avatar bg-cover" style="
-                                                        background-image: url('../static/img/post-author1.png');
-                                                    "></div><a href="#" class="author-name">Terence Whittle</a>
-                                        </div><span class="meta-item">Feb 06,2022 </span><span class="meta-item">6:15
-                                            pm</span>
-                                    </div><a href="#" class="button button-replay"><span><img
-                                                src="../static/img/corner-left-down.png" alt=""></span>Replay </a>
-                                </div>
-                                <p class="body-text">My hands really liked it,it was absorbed easily and
-                                    quickly,creating a feeling of hydration. And my hands really liked it,it was
-                                    absorbed easily and quickly,creating a feeling of hydration. </p>
-                            </div>
-                            <div class="comment-card replay">
-                                <div class="card-top">
-                                    <div class="card-meta">
-                                        <div class="meta-item post-author">
-                                            <div class="author-avatar bg-cover" style="
-                                                        background-image: url('../static/img/post-author1.png');
-                                                    "></div><a href="#" class="author-name">Ruqayyah Povey</a>
-                                        </div><span class="meta-item">Feb 06,2022 </span><span class="meta-item">6:15
-                                            pm</span>
-                                    </div><a href="#" class="button button-replay"><span><img
-                                                src="../static/img/corner-left-down.png" alt=""></span>Replay </a>
-                                </div>
-                                <p class="body-text">My hands really liked it,it was absorbed easily and
-                                    quickly,creating a feeling of hydration. And my hands really liked it,it was
-                                    absorbed easily and quickly,creating a feeling of hydration. </p>
-                            </div>
-                            <div class="comment-card">
-                                <div class="card-top">
-                                    <div class="card-meta">
-                                        <div class="meta-item post-author">
-                                            <div class="author-avatar bg-cover" style="
-                                                        background-image: url('../static/img/post-author1.png');
-                                                    "></div><a href="#" class="author-name">Said Mclean</a>
-                                        </div><span class="meta-item">Feb 06,2022 </span><span class="meta-item">6:15
-                                            pm</span>
-                                    </div><a href="#" class="button button-replay"><span><img
-                                                src="../static/img/corner-left-down.png" alt=""></span>Replay </a>
-                                </div>
-                                <p class="body-text">My hands really liked it,it was absorbed easily and
-                                    quickly,creating a feeling of hydration. And my hands really liked it,it was
-                                    absorbed easily and quickly,creating a feeling of hydration. </p>
-                            </div>
-                        </div>
-                        <div class="comment-box">
-                            <h3 class="heading-secondary">Post a comment</h3>
-                            <form class="comment-form">
-                                <div class="row">
-                                    <div class="col-md-4"><input type="text" placeholder="Your Name"></div>
-                                    <div class="col-md-4"><input type="email" placeholder="Your Email"></div>
-                                    <div class="col-md-4"><input type="text" placeholder="+1 (___) __ __ ___"></div>
-                                    <div class="col-12"><textarea placeholder="Enter your comment"></textarea></div>
-                                </div><button class="button button-primary">Post Comment</button>
-                            </form>
-                        </div> -->
-                    <!-- ============= AD CAMPAIGN-2 ============= -->
-                    <!-- <div class="ad-campaign-2 bg-cover mt-100"
-                            style="background-image: url('../static/img/add-campign-3.png')">
-                            <div class="row">
-                                <div class="col-lg-6"></div>
-                                <div class="col-lg-6">
-                                    <div class="right-content">
-                                        <div class="content"><span class="discount">20% off</span>
-                                            <h2 class="heading-primary">Home furniture</h2>
-                                        </div><a href="#" class="button icon-button active"><span class="icon"><i
-                                                    class="fas fa-chevron-right"></i></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
+
                   </div>
                 </div>
                 <div class="col-lg-3">
                   <div class="right-content">
                     <!-- Widget search box -->
-                    <div class="widget-search-box"><input type="text" v-model="seachcontent" placeholder="输入内容"><button
-                        @click="queryssubmit()" class="search-btn"><i class="fas el-icon-search"></i></button></div>
+<!--                    <div class="widget-search-box"><input type="text" v-model="seachcontent" placeholder="输入内容">-->
+<!--                      <button-->
+<!--                        @click="queryssubmit()" class="search-btn"><i class="fas el-icon-search"></i></button>-->
+<!--                    </div>-->
                     <h3 class="heading-tertiary">最新文章</h3>
                     <div v-for="item in newArticle" :key="item.id" class="recent-post-card">
                       <a href="">
                         <div>
-                          <img class="card-thumb bg-cover" :src="item.thumb" />
+                          <img class="card-thumb bg-cover" :src="item.thumb"/>
                         </div>
                         <div class="card-content">
                           <div class="post-meta"><span class="meta-item">{{ item.author }} </span>
@@ -725,35 +531,36 @@ line-height: 28px;font-weight: 400;" class="mg-bt-42">{{ this.intro }}</p>
                       </a>
                     </div>
                     <!-- Widget category -->
-                    <div class="widget-categories">
-                      <h3 class="heading-tertiary">标签云</h3>
-                      <div class="categories-tags">
-                        <a v-for="item in taglist" :key="item.id"
-                          :href="'/list/' + item.tagName + '/all'">{{ item.tagName }} </a>
-                      </div>
-                    </div><!-- Widget ad banner -->
-                    <div class="widget-ad-banner bg-cover"
-                      style="background-image: url(/static/img/sidebar-add-banner.be2d2fc4.png);">
-                      <div class="content"><span class="discount">20% off</span>
-                        <h2 class="heading-secondary">会员折扣</h2>
-                        <p class="body-text">开通会员享受更多优惠</p><a href="#" class="button icon-button active"><span><i
-                              class="el-icon-caret-right"></i></span></a>
-                      </div>
-                    </div><!-- Widget social profile -->
-                    <div class="widget-social-profile">
-                      <h3 class="heading-tertiary mb-20">关注我们</h3>
-                      <p class="body-text">找到更多</p>
-                      <div class="social-items"><a href="#" class="social-link"><span class="icon"><i
-                              class="el-icon-lollipop"></i>
-                          </span></a><a href="#" class="social-link"><span class="icon"><i
-                              class="el-icon-ice-cream-square"></i></span></a><a href="#" class="social-link"><span
-                            class="icon"><i class="el-icon-lollipop"></i></span></a>
-                      </div>
-                    </div><!-- Widget popular post -->
+                    <!--                    <div class="widget-categories">-->
+                    <!--                      <h3 class="heading-tertiary">标签云</h3>-->
+                    <!--                      <div class="categories-tags">-->
+                    <!--                        <a v-for="item in taglist" :key="item.id"-->
+                    <!--                          :href="'/list/' + item.tagName + '/all'">{{ item.tagName }} </a>-->
+                    <!--                      </div>-->
+                    <!--                    </div>&lt;!&ndash; Widget ad banner &ndash;&gt;-->
+                    <!--                    <div class="widget-ad-banner bg-cover"-->
+                    <!--                      style="background-image: url(/static/img/sidebar-add-banner.be2d2fc4.png);">-->
+                    <!--                      <div class="content"><span class="discount">20% off</span>-->
+                    <!--                        <h2 class="heading-secondary">会员折扣</h2>-->
+                    <!--                        <p class="body-text">开通会员享受更多优惠</p><a href="#" class="button icon-button active"><span><i-->
+                    <!--                              class="el-icon-caret-right"></i></span></a>-->
+                    <!--                      </div>-->
+                    <!--                    </div>&lt;!&ndash; Widget social profile &ndash;&gt;-->
+                    <!--                    <div class="widget-social-profile">-->
+                    <!--                      <h3 class="heading-tertiary mb-20">关注我们</h3>-->
+                    <!--                      <p class="body-text">找到更多</p>-->
+                    <!--                      <div class="social-items"><a href="#" class="social-link"><span class="icon"><i-->
+                    <!--                              class="el-icon-lollipop"></i>-->
+                    <!--                          </span></a><a href="#" class="social-link"><span class="icon"><i-->
+                    <!--                              class="el-icon-ice-cream-square"></i></span></a><a href="#" class="social-link"><span-->
+                    <!--                            class="icon"><i class="el-icon-lollipop"></i></span></a>-->
+                    <!--                      </div>-->
+                    <!--                    </div>&lt;!&ndash; Widget popular post &ndash;&gt;-->
                   </div>
                 </div>
               </div>
             </div>
+
             <div class="mobile-model">
               <div class="
                   d-flex
@@ -769,10 +576,11 @@ line-height: 28px;font-weight: 400;" class="mg-bt-42">{{ this.intro }}</p>
             </div>
             <div class="el-dialog__wrapper text-center" style="display: none">
               <div role="dialog" aria-modal="true" aria-label="dialog" class="el-dialog no-bg no-shadow"
-                style="margin-top: 15vh; width: 1300px">
+                   style="margin-top: 15vh; width: 1300px">
                 <div class="el-dialog__header">
-                  <span class="el-dialog__title"></span><button type="button" aria-label="Close"
-                    class="el-dialog__headerbtn">
+                  <span class="el-dialog__title"></span>
+                  <button type="button" aria-label="Close"
+                          class="el-dialog__headerbtn">
                     <i class="el-dialog__close el-icon el-icon-close"></i>
                   </button>
                 </div>
@@ -785,7 +593,7 @@ line-height: 28px;font-weight: 400;" class="mg-bt-42">{{ this.intro }}</p>
               <div class="sidetools-item">
                 <div class="sidetools-wrapper">
                   <a href="https://t.me/macwk" target="_blank" class="cursor"><span
-                      class="sidetools-icon kfqq"></span></a>
+                    class="sidetools-icon kfqq"></span></a>
                 </div>
               </div>
               <div class="sidetools-item">
@@ -795,7 +603,7 @@ line-height: 28px;font-weight: 400;" class="mg-bt-42">{{ this.intro }}</p>
               </div>
               <span>
                 <div role="tooltip" id="el-popover-6929" aria-hidden="true" class="el-popover el-popper"
-                  style="width: 200px; display: none">
+                     style="width: 200px; display: none">
                   <!---->
                   <div class="text-center">
                     <a href="/feedback" class="mt-15 mb-0">在线留言</a>
@@ -805,7 +613,7 @@ line-height: 28px;font-weight: 400;" class="mg-bt-42">{{ this.intro }}</p>
               </span>
               <span>
                 <div role="tooltip" id="el-popover-3926" aria-hidden="true" class="el-popover el-popper"
-                  style="width: 200px; display: none">
+                     style="width: 200px; display: none">
                   <!---->
                   <div class="text-center">
                     <a href="/feedback" class="mt-15 mb-0">在线留言</a>
@@ -821,7 +629,7 @@ line-height: 28px;font-weight: 400;" class="mg-bt-42">{{ this.intro }}</p>
                 v-if="!show" -->
           <div class="myVEmojiPicker">
             <VEmojiPicker v-show="showDialog" :style="{ width: '340px', height: '200' }" labelSearch="Search"
-              lang="pt-BR" @select="onSelectEmoji" />
+                          lang="pt-BR" @select="onSelectEmoji"/>
           </div>
           <!-- 后台控制是否显示评论 -->
           <!-- <div v-if="!this.glabledata.glableCommentShow">
@@ -857,7 +665,7 @@ line-height: 28px;font-weight: 400;" class="mg-bt-42">{{ this.intro }}</p>
                   vertical-align: -6px;
                 ">
                 <path fill="#FFFFFF"
-                  d="M12.63,26.46H8.83a6.61,6.61,0,0,1-6.65-6.07,89.05,89.05,0,0,1,0-11.2A6.5,6.5,0,0,1,8.23,3.25a121.62,121.62,0,0,1,15.51,0A6.51,6.51,0,0,1,29.8,9.19a77.53,77.53,0,0,1,0,11.2,6.61,6.61,0,0,1-6.66,6.07H19.48L12.63,31V26.46">
+                      d="M12.63,26.46H8.83a6.61,6.61,0,0,1-6.65-6.07,89.05,89.05,0,0,1,0-11.2A6.5,6.5,0,0,1,8.23,3.25a121.62,121.62,0,0,1,15.51,0A6.51,6.51,0,0,1,29.8,9.19a77.53,77.53,0,0,1,0,11.2,6.61,6.61,0,0,1-6.66,6.07H19.48L12.63,31V26.46">
                 </path>
                 <path
                   d="M19.57,21.68h3.67a2.08,2.08,0,0,0,2.11-1.81,89.86,89.86,0,0,0,0-10.38,1.9,1.9,0,0,0-1.84-1.74,113.15,113.15,0,0,0-15,0A1.9,1.9,0,0,0,6.71,9.49a74.92,74.92,0,0,0-.06,10.38,2,2,0,0,0,2.1,1.81h3.81V26.5Z"
@@ -868,10 +676,10 @@ line-height: 28px;font-weight: 400;" class="mg-bt-42">{{ this.intro }}</p>
           <!-- </div>
           </div> -->
           <comment :articleId="this.$route.params.id" :theEmoge="this.MyEmoge" ref="child"
-            @closethecpmmentName="updateDate()" @openthecpmmentName="showemoge()" />
+                   @closethecpmmentName="updateDate()" @openthecpmmentName="showemoge()"/>
           <!---->
           <!---->
-          <foot />
+          <foot/>
           <div infos="0">
             <div class="
                 adBanner
@@ -888,25 +696,26 @@ line-height: 28px;font-weight: 400;" class="mg-bt-42">{{ this.intro }}</p>
 </template>
 
 <script>
-import { VEmojiPicker, emojisDefault, categoriesDefault } from "v-emoji-picker";
+import {VEmojiPicker, emojisDefault, categoriesDefault} from "v-emoji-picker";
 
 import top from './components/Top.vue'
 import foot from './components/Foots.vue'
 import comment from './components/ResComment.vue'
 
-import { getResourceCommentnum } from '@/api/webresourceComment'
-import { getResourceById, loveresource, getPrenewsResource, getLastnewsResource, viewresource } from '@/api/webresource'
-import { getResourceClassNameByid } from '@/api/webresourceclass'
-import { getNewArticle } from "@/api/webarticle";
+import {getResourceCommentnum} from '@/api/webresourceComment'
+import {getResourceById, loveresource, getPrenewsResource, getLastnewsResource, viewresource} from '@/api/webresource'
+import {getResourceClassNameByid} from '@/api/webresourceclass'
+import {getNewArticle} from "@/api/webarticle";
 
-import { getAllTag, getTagByList } from "@/api/weballtag";
+import {getAllTag, getTagByList} from "@/api/weballtag";
 
-import { formatDate, GetWeekdate } from '@/utils/date.js'
+import {formatDate, GetWeekdate} from '@/utils/date.js'
 
 import wxPayApi from '../api/payment/wxPay'
 import aliPayApi from '../api/payment/aliPay'
 import orderInfoApi from '../api/payment/orderInfo'
 import router from "@/router";
+
 export default {
 
   name: 'Resource',
@@ -1009,8 +818,7 @@ export default {
         });
         this.loveNum += 1
         this.lovecheck = true
-      }
-      else {
+      } else {
         this.$notify({
           title: '取消点赞',
           message: '已取消点赞',
@@ -1078,7 +886,7 @@ export default {
           });
           // 三秒后跳转到订单列表
           setTimeout(() => {
-            this.$router.push({ path: '/download/' + this.$route.params.id })
+            this.$router.push({path: '/download/' + this.$route.params.id})
           }, 500)
         }
       })
@@ -1201,7 +1009,9 @@ export default {
     Download() {
       const user = JSON.parse(window.localStorage.getItem('access-admin'))
       this.userJudje = (user == null)
-      if (!this.userJudje) { this.userid = user.data.userid }
+      if (!this.userJudje) {
+        this.userid = user.data.userid
+      }
       if (this.userJudje) {
         //游客购买
         console.log("游客购买")
@@ -1210,8 +1020,7 @@ export default {
         //打开支付方式选择
         this.PaymentDialogVisibleTemp = true
 
-      }
-      else {
+      } else {
         //登陆用户购买
         console.log("登陆用户购买")
         //禁用按钮，防止重复提交
@@ -1382,7 +1191,7 @@ export default {
   bottom: 20px !important;
 }
 </style>
-  
+
 <style scoped>
 .myVEmojiPicker ::v-deep.category {
   background: none;
@@ -1711,7 +1520,7 @@ a:focus {
   color: #50A0FF;
 }
 
-@media screen and (max-width:991px) {
+@media screen and (max-width: 991px) {
   .col-lg-3 {
     display: none;
   }
