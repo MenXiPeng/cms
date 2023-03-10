@@ -463,7 +463,7 @@ export const constantRoutes = [
 ]
 
 const createRouter = () => new Router({
-  mode: 'history',
+  // mode: 'history',
   // mode: 'history', // require service support
   scrollBehavior: () => ({ y: 0 }),
   routes: constantRoutes
@@ -476,5 +476,10 @@ export function resetRouter() {
   const newRouter = createRouter()
   router.matcher = newRouter.matcher // reset router
 }
-
+router.beforeEach((to, from, next) => {
+  if (to.meta.metaInfo) {
+    store.commit("metaModule/CHANGE_META_INFO", to.meta.metaInfo)
+  }
+  next()
+})
 export default router

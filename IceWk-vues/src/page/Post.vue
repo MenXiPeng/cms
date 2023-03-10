@@ -23,38 +23,6 @@
             </div>
                   </div>
                   <div class="article-contents">
-                    <!-- <h1 id="article-top" class="b-0 mt-0 pb-0 mb-15">
-                      {{ this.title }}
-                    </h1>
-                    <div class="d-flex mb-6 align-items-center">
-                      <img
-                        :src="profile"
-                        class="w-50 mw-50 h-50 b-0 circle m-0 mr-4"
-                      />
-                      <div class="flex">
-                        <h4 class="mb-0 mt-0">{{ this.author }}</h4>
-                        <p class="mb-0 py-0 fs-14">
-                          {{ this.addTime }} 阅读 {{ this.hits }}
-                        </p>
-                      </div>
-                    </div>
-                    <blockquote class="blockquote">
-                      <div class="text-muted">
-                        {{ this.intro }}
-                      </div>
-                    </blockquote>
-                    <div class=".image-header-side">
-                      <div class="imgBox">
-                        <img
-                          class="image-header"
-                          alt=""
-                          :data-src="thumb"
-                          :src="thumb"
-                          lazy="loaded"
-                        />
-                      </div>
-                    </div>
-                    <div class="content-markdown"> -->
                       <!-- 内容区域 -->
                      <div class="row gy-5">
                      <div class="col-lg-9">
@@ -113,142 +81,65 @@
                                     <span class="date body-text">{{formatDate(nextArticle.addTime)}}</span></div>
                             </div>
                               </router-link>
-                        </div><!-- Comments -->
-                        <!-- <div class="post-comments">
-                            <h3 class="heading-secondary">Comments(3)</h3>
-                            <div class="comment-card">
-                                <div class="card-top">
-                                    <div class="card-meta">
-                                        <div class="meta-item post-author">
-                                            <div class="author-avatar bg-cover" style="
-                                                        background-image: url('../static/img/post-author1.png');
-                                                    "></div><a href="#" class="author-name">Terence Whittle</a>
-                                        </div><span class="meta-item">Feb 06,2022 </span><span class="meta-item">6:15
-                                            pm</span>
-                                    </div><a href="#" class="button button-replay"><span><img
-                                                src="../static/img/corner-left-down.png" alt=""></span>Replay </a>
-                                </div>
-                                <p class="body-text">My hands really liked it,it was absorbed easily and
-                                    quickly,creating a feeling of hydration. And my hands really liked it,it was
-                                    absorbed easily and quickly,creating a feeling of hydration. </p>
-                            </div>
-                            <div class="comment-card replay">
-                                <div class="card-top">
-                                    <div class="card-meta">
-                                        <div class="meta-item post-author">
-                                            <div class="author-avatar bg-cover" style="
-                                                        background-image: url('../static/img/post-author1.png');
-                                                    "></div><a href="#" class="author-name">Ruqayyah Povey</a>
-                                        </div><span class="meta-item">Feb 06,2022 </span><span class="meta-item">6:15
-                                            pm</span>
-                                    </div><a href="#" class="button button-replay"><span><img
-                                                src="../static/img/corner-left-down.png" alt=""></span>Replay </a>
-                                </div>
-                                <p class="body-text">My hands really liked it,it was absorbed easily and
-                                    quickly,creating a feeling of hydration. And my hands really liked it,it was
-                                    absorbed easily and quickly,creating a feeling of hydration. </p>
-                            </div>
-                            <div class="comment-card">
-                                <div class="card-top">
-                                    <div class="card-meta">
-                                        <div class="meta-item post-author">
-                                            <div class="author-avatar bg-cover" style="
-                                                        background-image: url('../static/img/post-author1.png');
-                                                    "></div><a href="#" class="author-name">Said Mclean</a>
-                                        </div><span class="meta-item">Feb 06,2022 </span><span class="meta-item">6:15
-                                            pm</span>
-                                    </div><a href="#" class="button button-replay"><span><img
-                                                src="../static/img/corner-left-down.png" alt=""></span>Replay </a>
-                                </div>
-                                <p class="body-text">My hands really liked it,it was absorbed easily and
-                                    quickly,creating a feeling of hydration. And my hands really liked it,it was
-                                    absorbed easily and quickly,creating a feeling of hydration. </p>
-                            </div>
                         </div>
-                        <div class="comment-box">
-                            <h3 class="heading-secondary">Post a comment</h3>
-                            <form class="comment-form">
-                                <div class="row">
-                                    <div class="col-md-4"><input type="text" placeholder="Your Name"></div>
-                                    <div class="col-md-4"><input type="email" placeholder="Your Email"></div>
-                                    <div class="col-md-4"><input type="text" placeholder="+1 (___) __ __ ___"></div>
-                                    <div class="col-12"><textarea placeholder="Enter your comment"></textarea></div>
-                                </div><button class="button button-primary">Post Comment</button>
-                            </form>
-                        </div> -->
-                        <!-- ============= AD CAMPAIGN-2 ============= -->
-                        <!-- <div class="ad-campaign-2 bg-cover mt-100"
-                            style="background-image: url('../static/img/add-campign-3.png')">
-                            <div class="row">
-                                <div class="col-lg-6"></div>
-                                <div class="col-lg-6">
-                                    <div class="right-content">
-                                        <div class="content"><span class="discount">20% off</span>
-                                            <h2 class="heading-primary">Home furniture</h2>
-                                        </div><a href="#" class="button icon-button active"><span class="icon"><i
-                                                    class="fas fa-chevron-right"></i></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="right-content">
-                        <!-- Widget search box -->
-                        <div class="widget-search-box"><input type="text" v-model="seachcontent"  placeholder="输入内容">
-                      <button
-                      @click="queryssubmit()"
-                    class="search-btn"
-                  >
-                    <i class="el-icon-search"></i>
-                  </button>
-                          </div>
-                        <h3 class="heading-tertiary">推荐文章</h3>
-                        <div v-for="item in newArticle" :key="item.id" class="recent-post-card">
-                          <a href="">
-                            <div>
-                            <img class="card-thumb bg-cover" :src="item.thumb"  />
-                            </div>
-                            <div class="card-content">
-                                <div class="post-meta"><span class="meta-item">{{item.author}} </span>
-                                
-                                <span  v-if="item.createTime != null"  class="meta-item"> {{formatDate(item.createTime)}} </span>
-                                  <span  v-else  class="meta-item"> {{formatDate(item.addTime)}} </span>
-                                <span class="meta-item"><i class="el-icon-chat-line-square"></i>{{item.hits}} </span>
-                                </div>
-                                    <h3 class="heading-secondary">{{item.title}}</h3>                      
-                            </div>
-                          </a>
-                        </div>
+<!--                    <div class="right-content">-->
+<!--                        &lt;!&ndash; Widget search box &ndash;&gt;-->
+<!--                        <div class="widget-search-box"><input type="text" v-model="seachcontent"  placeholder="输入内容">-->
+<!--                      <button-->
+<!--                      @click="queryssubmit()"-->
+<!--                    class="search-btn"-->
+<!--                  >-->
+<!--                    <i class="el-icon-search"></i>-->
+<!--                  </button>-->
+<!--                          </div>-->
+<!--                        <h3 class="heading-tertiary">推荐文章</h3>-->
+<!--                        <div v-for="item in newArticle" :key="item.id" class="recent-post-card">-->
+<!--                          <a href="">-->
+<!--                            <div>-->
+<!--                            <img class="card-thumb bg-cover" :src="item.thumb"  />-->
+<!--                            </div>-->
+<!--                            <div class="card-content">-->
+<!--                                <div class="post-meta"><span class="meta-item">{{item.author}} </span>-->
+
+<!--                                <span  v-if="item.createTime != null"  class="meta-item"> {{formatDate(item.createTime)}} </span>-->
+<!--                                  <span  v-else  class="meta-item"> {{formatDate(item.addTime)}} </span>-->
+<!--                                <span class="meta-item"><i class="el-icon-chat-line-square"></i>{{item.hits}} </span>-->
+<!--                                </div>-->
+<!--                                    <h3 class="heading-secondary">{{item.title}}</h3>-->
+<!--                            </div>-->
+<!--                          </a>-->
+<!--                        </div>-->
                        <!-- Widget category -->
-                        <div class="widget-categories">
-                            <h3 class="heading-tertiary">标签云</h3>
-                            <div class="categories-tags">
-                              <a v-for="item in taglist" :key="item.id" 
-                              :href="'/post/' + item.tagName + '/all'" >{{item.tagName}} </a>
-                            </div>
-                        </div><!-- Widget ad banner -->
-                        <div class="widget-ad-banner bg-cover"
-                            style="">
-                            <div class="content"><span class="discount">20% off</span>
-                                <h2 class="heading-secondary">会员折扣</h2>
-                                <p class="body-text">开通会员享受更多优惠</p><a href="#"
-                                    class="button icon-button active"><span><i
-                                            class="el-icon-caret-right"></i></span></a>
-                            </div>
-                        </div><!-- Widget social profile -->
-                        <div class="widget-social-profile">
-                             <h3 class="heading-tertiary mb-20">关注我们</h3>
-                            <p class="body-text">找到更多</p>
-                            <div class="social-items"><a href="#" class="social-link"><span class="icon"><i
-                                            class="el-icon-lollipop"></i>
-                                            </span></a><a href="#"
-                                    class="social-link"><span class="icon"><i
-                                            class="el-icon-ice-cream-square"></i></span></a><a href="#"
-                                    class="social-link"><span class="icon"><i class="el-icon-lollipop"></i></span></a>
-                            </div>
-                        </div><!-- Widget popular post -->
+<!--                        <div class="widget-categories">-->
+<!--                            <h3 class="heading-tertiary">标签云</h3>-->
+<!--                            <div class="categories-tags">-->
+<!--                              <a v-for="item in taglist" :key="item.id"-->
+<!--                              :href="'/post/' + item.tagName + '/all'" >{{item.tagName}} </a>-->
+<!--                            </div>-->
+<!--                        </div>&lt;!&ndash; Widget ad banner &ndash;&gt;-->
+<!--                        <div class="widget-ad-banner bg-cover"-->
+<!--                            style="">-->
+<!--                            <div class="content"><span class="discount">20% off</span>-->
+<!--                                <h2 class="heading-secondary">会员折扣</h2>-->
+<!--                                <p class="body-text">开通会员享受更多优惠</p><a href="#"-->
+<!--                                    class="button icon-button active"><span><i-->
+<!--                                            class="el-icon-caret-right"></i></span></a>-->
+<!--                            </div>-->
+<!--                        </div>&lt;!&ndash; Widget social profile &ndash;&gt;-->
+<!--                        <div class="widget-social-profile">-->
+<!--                             <h3 class="heading-tertiary mb-20">关注我们</h3>-->
+<!--                            <p class="body-text">找到更多</p>-->
+<!--                            <div class="social-items"><a href="#" class="social-link"><span class="icon"><i-->
+<!--                                            class="el-icon-lollipop"></i>-->
+<!--                                            </span></a><a href="#"-->
+<!--                                    class="social-link"><span class="icon"><i-->
+<!--                                            class="el-icon-ice-cream-square"></i></span></a><a href="#"-->
+<!--                                    class="social-link"><span class="icon"><i class="el-icon-lollipop"></i></span></a>-->
+<!--                            </div>-->
+<!--                        </div>&lt;!&ndash; Widget popular post &ndash;&gt;-->
                         <!-- Widget popular post -->
                         <div class="widget-popular-post mt-30">
                             <h3 class="heading-tertiary mb-20">热门文章</h3><!-- Cat item -->
@@ -331,12 +222,12 @@
                                     height="24"
                                     viewBox="0 0 24 24"
                                     role="img"
-                                    
+
                                     aria-hidden="true"
                                     class="crayons-icon"
                                   >
                                     <path
-                                       
+
                                       d="M21.179 12.794l.013.014L12 22l-9.192-9.192.013-.014A6.5 6.5 0 0112 3.64a6.5 6.5 0 019.179 9.154zM4.575 5.383a4.5 4.5 0 000 6.364L12 19.172l7.425-7.425a4.5 4.5 0 10-6.364-6.364L8.818 9.626 7.404 8.21l3.162-3.162a4.5 4.5 0 00-5.99.334l-.001.001z"
                                     ></path>
                                   </svg>
@@ -354,7 +245,7 @@
                                     height="24"
                                     viewBox="0 0 24 24"
                                     role="img"
-                                    
+
                                     aria-hidden="true"
                                     class="crayons-icon"
                                   >
@@ -545,7 +436,7 @@
                   "
                 >
                   <div
-                 
+
                     class="
                       d-flex
                       align-items-center
@@ -609,7 +500,7 @@
           </div>
         </div>
       </div>
-    </div>
+<!--    </div>-->
 </template>
 
 <script>
@@ -640,7 +531,7 @@ import comment from "./components/Comment.vue";
 import { formatDate } from "@/utils/date.js";
 import { mapState, mapMutations } from "vuex";
 
-export default {
+export default ({
   name: "Post",
   components: {
     SideCatalog,
@@ -688,9 +579,9 @@ export default {
       prismjs.highlightAll();
     }, 20000);
     //下面这行代码解决prismjs不能异步加载必须刷新一下才显示的问题
-    process.browser&&document.querySelectorAll("pre code").forEach((block) => Prism.highlightElement(block));
+    process.browser&&document.querySelectorAll("pre code").forEach((block) => Prism.highlightElement(block)),
+    this.Init();
   },
-
   methods: {
         //判空
         judgeNull(str) {
@@ -713,7 +604,7 @@ export default {
         this.$router.push({
           path: `/post/${this.seachcontent}/all`,
         })
-       
+
       }
     },
     formatDate(time) {
@@ -801,6 +692,9 @@ export default {
             this.Mytag.push(resp.data.tagName);
         });
         });
+        this.setting.keywords = this.Mytag;
+        this.setting.title = resp.data.title;
+        this.setting.description = resp.data.intro;
       });
       getNewArticle(2).then((resp) => {
         this.newArticle = resp.data;
@@ -824,9 +718,18 @@ export default {
         }
       });
     },
+    Init(){
+      // 模拟接口获取数据
+
+    },
   },
   data() {
     return {
+      setting: {
+        title: "",
+        keywords: "",
+        description: "",
+      },
       preArticle: {
         title: "",
         addTime: "",
@@ -870,7 +773,16 @@ export default {
       show: false,
     };
   },
-};
+  metaInfo() {
+    return {
+      title: this.setting.title,
+      meta: [
+        { name: "keywords", content: this.setting.keywords },
+        { name: "description", content: this.setting.description },
+      ],
+    };
+  },
+});
 </script>
 <style scoped>
   @import "../static/mycss/blog.css";

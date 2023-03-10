@@ -253,7 +253,7 @@
             data-v-122eae44=""
             aria-current="page"
           >
-            <img src="../../static/image/logo.svg" />
+            <img src="../../static/image/logo.png" />
             <span data-v-122eae44="">{{
               this.glabledata.glableSitTitle
             }}</span></a

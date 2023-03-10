@@ -41,7 +41,7 @@ public class FileUtils {
         //组装为实际地址，非本地地址
         ServerConfig serverConfig = new ServerConfig();
         String url = serverConfig.getUrl();
-        return url + "/logistics/" + originalFilename;
+        return url + "/api/logistics/" + originalFilename;
     }
 
 }

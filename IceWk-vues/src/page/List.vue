@@ -431,11 +431,11 @@ export default ({
     }
   },
   methods: {
-    // 鼠标移入赋值index 
+    // 鼠标移入赋值index
     dowmloadover(index) {
       this.isAcitive = index
     },
-    // 鼠标移出 
+    // 鼠标移出
     downloadleave(index) {
       this.isAcitive = false
     },
@@ -772,8 +772,8 @@ export default ({
 
 .img72,
 .imgQueXing3 {
-  width: 72px;
-  height: 72px;
+  width: 200px;
+  height: 120px;
 }
 
 .margin-top-90 {

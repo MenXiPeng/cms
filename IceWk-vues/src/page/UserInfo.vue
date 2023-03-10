@@ -135,41 +135,41 @@
                           </router-link>
                         </div>
 
-                        <div @click="ChanceHui()">
-                          <router-link to="/userinfo/vip">
-                            <div :class="acticveChanceHui">
-                              <a class="link-block"></a>
-                              <p>
-                                <i class="
-                                    b2font
-                                    b2-hand-heart-line b2-light b2-color"
-                                ></i
-                                >会员中心
-                              </p>
-                              <div class="author-sidebar-down">
-                                <i class="b2font b2-arrow-right-s-line"></i>
-                              </div>
-                            </div>
-                          </router-link>
-                        </div>
-                        <div @click="ChanceChong()" class="user-sidebar">
-                          <router-link to="/userinfo/charge">
-                            <div :class="acticveChanceChong">
-                              <a class="link-block"></a>
-                              <p>
-                                <i
-                                  class="
-                                    b2font
-                                    b2-heart-add-line b2-light b2-color
-                                  "
-                                ></i>充值中心
-                              </p>
-                              <div class="author-sidebar-down">
-                                <i class="b2font b2-arrow-right-s-line"></i>
-                              </div>
-                            </div>
-                          </router-link>
-                        </div>
+<!--                        <div @click="ChanceHui()">-->
+<!--                          <router-link to="/userinfo/vip">-->
+<!--                            <div :class="acticveChanceHui">-->
+<!--                              <a class="link-block"></a>-->
+<!--                              <p>-->
+<!--                                <i class="-->
+<!--                                    b2font-->
+<!--                                    b2-hand-heart-line b2-light b2-color"-->
+<!--                                ></i-->
+<!--                                >会员中心-->
+<!--                              </p>-->
+<!--                              <div class="author-sidebar-down">-->
+<!--                                <i class="b2font b2-arrow-right-s-line"></i>-->
+<!--                              </div>-->
+<!--                            </div>-->
+<!--                          </router-link>-->
+<!--                        </div>-->
+<!--                        <div @click="ChanceChong()" class="user-sidebar">-->
+<!--                          <router-link to="/userinfo/charge">-->
+<!--                            <div :class="acticveChanceChong">-->
+<!--                              <a class="link-block"></a>-->
+<!--                              <p>-->
+<!--                                <i-->
+<!--                                  class="-->
+<!--                                    b2font-->
+<!--                                    b2-heart-add-line b2-light b2-color-->
+<!--                                  "-->
+<!--                                ></i>充值中心-->
+<!--                              </p>-->
+<!--                              <div class="author-sidebar-down">-->
+<!--                                <i class="b2font b2-arrow-right-s-line"></i>-->
+<!--                              </div>-->
+<!--                            </div>-->
+<!--                          </router-link>-->
+<!--                        </div>-->
                         <div @click="hanceXiu()" class="user-sidebar">
                           <router-link to="/userinfo/changePw">
                             <div :class="acticveChanceXiu">

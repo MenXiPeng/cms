@@ -472,8 +472,8 @@ line-height: 28px;font-weight: 400;" class="mg-bt-42">{{ this.intro }}</p>
                       <div class="card-text">
                         <h3 class="heading-secondary">提 示</h3>
                         <p class="body-text">
-                          如有下载链接失效或者资源求档，请发送邮件到：snym@snym.cn，客服QQ：23339097。我们收到消息后会尽快回应消息。使用百度网盘下载，请关闭V*P*N，否则会跳转出错。<a
-                          href="https://macoshome.com/course/7692.html">点我查看</a>部分地区蓝奏云下载链接无法访问问题解决。
+                          如有下载链接失效或者资源求档，请发送邮件到：2524451438@qq.com，QQ：2524451438。我们收到消息后会尽快回应消息。使用百度网盘下载，请关闭V*P*N，否则会跳转出错。
+<!--                          <a href="https://macoshome.com/course/7692.html">点我查看</a>部分地区蓝奏云下载链接无法访问问题解决。-->
                         </p>
                       </div>
                     </div><!-- Post navigation -->
@@ -530,32 +530,6 @@ line-height: 28px;font-weight: 400;" class="mg-bt-42">{{ this.intro }}</p>
                         </div>
                       </a>
                     </div>
-                    <!-- Widget category -->
-                    <!--                    <div class="widget-categories">-->
-                    <!--                      <h3 class="heading-tertiary">标签云</h3>-->
-                    <!--                      <div class="categories-tags">-->
-                    <!--                        <a v-for="item in taglist" :key="item.id"-->
-                    <!--                          :href="'/list/' + item.tagName + '/all'">{{ item.tagName }} </a>-->
-                    <!--                      </div>-->
-                    <!--                    </div>&lt;!&ndash; Widget ad banner &ndash;&gt;-->
-                    <!--                    <div class="widget-ad-banner bg-cover"-->
-                    <!--                      style="background-image: url(/static/img/sidebar-add-banner.be2d2fc4.png);">-->
-                    <!--                      <div class="content"><span class="discount">20% off</span>-->
-                    <!--                        <h2 class="heading-secondary">会员折扣</h2>-->
-                    <!--                        <p class="body-text">开通会员享受更多优惠</p><a href="#" class="button icon-button active"><span><i-->
-                    <!--                              class="el-icon-caret-right"></i></span></a>-->
-                    <!--                      </div>-->
-                    <!--                    </div>&lt;!&ndash; Widget social profile &ndash;&gt;-->
-                    <!--                    <div class="widget-social-profile">-->
-                    <!--                      <h3 class="heading-tertiary mb-20">关注我们</h3>-->
-                    <!--                      <p class="body-text">找到更多</p>-->
-                    <!--                      <div class="social-items"><a href="#" class="social-link"><span class="icon"><i-->
-                    <!--                              class="el-icon-lollipop"></i>-->
-                    <!--                          </span></a><a href="#" class="social-link"><span class="icon"><i-->
-                    <!--                              class="el-icon-ice-cream-square"></i></span></a><a href="#" class="social-link"><span-->
-                    <!--                            class="icon"><i class="el-icon-lollipop"></i></span></a>-->
-                    <!--                      </div>-->
-                    <!--                    </div>&lt;!&ndash; Widget popular post &ndash;&gt;-->
                   </div>
                 </div>
               </div>
@@ -1075,6 +1049,9 @@ export default {
           });
         });
         console.log(this.Mytag)
+        this.setting.keywords = this.Mytag;
+        this.setting.title = resp.data.title;
+        this.setting.description = resp.data.intro;
       })
       getPrenewsResource(id).then((resp) => {
         this.preResource.title = resp.data.title;
@@ -1098,6 +1075,11 @@ export default {
   },
   data() {
     return {
+      setting: {
+        title: "",
+        keywords: "",
+        description: "",
+      },
       preResource: {
         title: "",
         addTime: "",
@@ -1157,6 +1139,15 @@ export default {
       title: "",
       acticve: 'nav-link active',
     }
+  },
+  metaInfo() {
+    return {
+      title: this.setting.title,
+      meta: [
+        { name: "keywords", content: this.setting.keywords },
+        { name: "description", content: this.setting.description },
+      ],
+    };
   },
 }
 </script>

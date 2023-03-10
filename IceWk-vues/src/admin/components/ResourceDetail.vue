@@ -128,8 +128,7 @@
         </el-form-item>
 
         <el-form-item prop="image_uri" style="margin-bottom: 30px">
-          <Upload :foriscreate="false" :fortitle="this.postForm.title" :forcontent="this.postForm.intro"
-            v-model="postForm.thumb" />
+          <Upload :foriscreate="false" :fortitle="this.postForm.title" :forcontent="this.postForm.intro" v-model="postForm.thumb" />
         </el-form-item>
         <h4>上传轮播图</h4>
         <div class="upload-container">
@@ -238,7 +237,7 @@ export default {
     return {
       fileList: [],
       imageList: [],
-      newFile: new FormData(), //   1. 定义一个newFile变量（FormData 对象） 
+      newFile: new FormData(), //   1. 定义一个newFile变量（FormData 对象）
       isfree: false,
       value: [],
       options: [],
@@ -306,7 +305,7 @@ export default {
     },
     BeforeUpload(file) {
       if (file) {
-        this.newFile.append('file', file); //  2. 上传之前，拿到file对象，并将它添加到刚刚定义的FormData对象中。 
+        this.newFile.append('file', file); //  2. 上传之前，拿到file对象，并将它添加到刚刚定义的FormData对象中。
         console.log(this.newFile.get('file'))
         console.log(this.newFile.get('file'), "123")
       } else {

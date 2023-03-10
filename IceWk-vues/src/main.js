@@ -17,7 +17,7 @@ import VueQriously from 'vue-qriously'
 
 import { getSetting } from '@/api/websetting'
 
-
+import VueMeta from "vue-meta";
 /**
  * If you don't want to use mock-server
  * you want to use MockJs for mock api
@@ -41,8 +41,22 @@ Vue.use(SlideVerify);
 Vue.config.productionTip = false
 
 Vue.use(VueQriously)
-
+Vue.use(VueMeta)
 new Vue({
+  // metaInfo() {
+  //   return {
+  //     title: this.$store.state.metaModule.metaInfo.title,
+  //     meta: [
+  //       {
+  //         name: "keywords",
+  //         content: this.$store.state.metaModule.metaInfo.keywords
+  //       }, {
+  //         name: "description",
+  //         content: this.$store.state.metaModule.metaInfo.description
+  //       }
+  //     ]
+  //   }
+  // },
   router,
   store,
   render: h => h(App)
@@ -50,7 +64,7 @@ new Vue({
 
 // 请求接口保存全局数据
 const  getUpdateList = (async()=>{
-    await getSetting().then(resp => {   
+    await getSetting().then(resp => {
       store.dispatch("glabledata",resp.data);
     })
 })
@@ -89,7 +103,7 @@ import {
   DatePicker,
   TimeSelect,
   TimePicker,
- 
+
   Tabs,
   TabPane,
   Tag,
@@ -104,7 +118,7 @@ import {
   Radio,
   RadioGroup,
   RadioButton,
- 
+
   Breadcrumb,
   BreadcrumbItem,
   Slider,
@@ -118,7 +132,7 @@ import {
   Aside,
   Main,
   Footer,
- 
+
   MessageBox,
   Message,
   Notification,

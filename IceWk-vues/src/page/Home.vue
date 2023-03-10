@@ -108,142 +108,142 @@
               </div>
 
               <div class="container mb-5">
-<!--                <div class="d-flex app-content-header mb-6">-->
+                <div class="d-flex app-content-header mb-6">
 
-<!--                  <div class="main-title">-->
-<!--                    <h4 class="i-con-h-a mb-0">-->
-<!--                      <i class="mr-1 text-muted i-con i-con-calendar v-m-4"><i></i></i>-->
-<!--                      <span>精品资源</span>-->
-<!--                    </h4>-->
-<!--                  </div>-->
-<!--                  <nav class="nav nav-title flex-grow-1">-->
-<!--                    <a @click="r_changeNews()" :class="{-->
-<!--                      'active': r_news === r_sortOrder,-->
-<!--                    }" class="nav-link ">新鲜发布</a>-->
-<!--                    <a @click="r_changeDownload()" :class="{-->
-<!--                      'active': r_download === r_sortOrder,-->
-<!--                    }" class="nav-link">热门下载</a>-->
-<!--                    <a @click="r_changeRecommend()" :class="{-->
-<!--                      'active': r_recommend === r_sortOrder,-->
-<!--                    }" class="nav-link">站长推荐</a>-->
-<!--                    <a @click="r_changeDiscuss()" :class="{-->
-<!--                      'active': r_discuss === r_sortOrder,-->
-<!--                    }" class="nav-link">最多评论</a>-->
-<!--                  </nav>-->
-<!--                  <div class="more-action">-->
-<!--                    <router-link to="/list">-->
-<!--                      <a class="btn btn-more active">-->
-<!--                        更多软件-->
-<!--                        <i class="icon-arrow-right fw-600 fs-12 v-2"></i></a>-->
-<!--                    </router-link>-->
-<!--                  </div>-->
-<!--                </div>-->
-                <!---->
-<!--                <div id="listAppContainer" class="app-content-body listAppContainer">-->
-<!--                  <div class="mw-row">-->
-<!--                    <div v-for="item, index in rlist" :key="item.id" class="mw-col list-animation-leftIn delay-3">-->
-<!--                      <div v-if="!glabledata.glableImageFormat">-->
-<!--                        <div v-if="item.status.includes('published')">-->
-<!--                          <router-link :to="'/list/' + item.id">-->
-<!--                            <a class="macwk-app border white cursor-pointer">-->
-<!--                              <el-image v-show="item.thumb != null" class="listtitleimg delay-3" :src="item.thumb" lazy>-->
-<!--                                <div slot="placeholder" class="image-slot">-->
-<!--                                  <img style="-->
-<!--                                        width: 100%;-->
-<!--                                        height: 100%;object-fit: cover;-->
-<!--                                      " src="../static/image/loding.gif"/>-->
-<!--                                </div>-->
-<!--                              </el-image>-->
-<!--                              <div v-show="item.thumb == null" class="delayImgss" :style="getStyles()">-->
-<!--                                <h3 class="-->
-<!--                                      flex-->
-<!--                                      text-center text-white-->
-<!--                                      opacity-50-->
-<!--                                    ">-->
-<!--                                  NOPIC-->
-<!--                                </h3>-->
-<!--                              </div>-->
-<!--                              <div class="macwk-app__body">-->
-<!--                                <div class="card-meta">-->
-<!--                                  <div class="meta-item post-author">-->
-<!--                                    <el-avatar style=" margin-bottom: 3px;  margin-right: 3px;"-->
-<!--                                               :src="item.authorThumb"></el-avatar>-->
-<!--                                    <a href="blog-list.html" class="author-name">天天</a>-->
-<!--                                  </div>-->
-<!--                                  <span v-if="item.createTime != null" class="meta-item">-->
-<!--                                    {{ rformatDate(item.createTime) }}</span>-->
-<!--                                  <span v-else class="meta-item"> {{ rformatDate(item.addTime) }}</span>-->
+                  <div class="main-title">
+                    <h4 class="i-con-h-a mb-0">
+                      <i class="mr-1 text-muted i-con i-con-calendar v-m-4"><i></i></i>
+                      <span>精品资源</span>
+                    </h4>
+                  </div>
+                  <nav class="nav nav-title flex-grow-1">
+                    <a @click="r_changeNews()" :class="{
+                      'active': r_news === r_sortOrder,
+                    }" class="nav-link ">新鲜发布</a>
+                    <a @click="r_changeDownload()" :class="{
+                      'active': r_download === r_sortOrder,
+                    }" class="nav-link">热门下载</a>
+                    <a @click="r_changeRecommend()" :class="{
+                      'active': r_recommend === r_sortOrder,
+                    }" class="nav-link">站长推荐</a>
+                    <a @click="r_changeDiscuss()" :class="{
+                      'active': r_discuss === r_sortOrder,
+                    }" class="nav-link">最多评论</a>
+                  </nav>
+                  <div class="more-action">
+                    <router-link to="/list">
+                      <a class="btn btn-more active">
+                        更多软件
+                        <i class="icon-arrow-right fw-600 fs-12 v-2"></i></a>
+                    </router-link>
+                  </div>
+                </div>
 
-<!--                                </div>-->
-<!--                                <h3 class="heading-tertiary-list">{{ item.title }}</h3>-->
-<!--                              </div>-->
-<!--                              <div class="extend">-->
-<!--                                <div class="button">-->
-<!--                                  <div style="margin-left:12px">-->
-<!--                                    <span style="font-size: 36px;line-height: 1;">-->
+                <div id="listAppContainer" class="app-content-body listAppContainer">
+                  <div class="mw-row">
+                    <div v-for="item, index in rlist" :key="item.id" class="mw-col list-animation-leftIn delay-3">
+                      <div v-if="!glabledata.glableImageFormat">
+                        <div v-if="item.status.includes('published')">
+                          <router-link :to="'/list/' + item.id">
+                            <a class="macwk-app border white cursor-pointer">
+                              <el-image v-show="item.thumb != null" class="listtitleimg delay-3" :src="item.thumb" lazy>
+                                <div slot="placeholder" class="image-slot">
+                                  <img style="
+                                        width: 100%;
+                                        height: 100%;object-fit: cover;
+                                      " src="../static/image/loding.gif"/>
+                                </div>
+                              </el-image>
+                              <div v-show="item.thumb == null" class="delayImgss" :style="getStyles()">
+                                <h3 class="
+                                      flex
+                                      text-center text-white
+                                      opacity-50
+                                    ">
+                                  NOPIC
+                                </h3>
+                              </div>
+                              <div class="macwk-app__body">
+                                <div class="card-meta">
+                                  <div class="meta-item post-author">
+                                    <el-avatar style=" margin-bottom: 3px;  margin-right: 3px;"
+                                               :src="item.authorThumb"></el-avatar>
+                                    <a href="blog-list.html" class="author-name">天天</a>
+                                  </div>
+                                  <span v-if="item.createTime != null" class="meta-item">
+                                    {{ rformatDate(item.createTime) }}</span>
+                                  <span v-else class="meta-item"> {{ rformatDate(item.addTime) }}</span>
 
-<!--                                      <i data-v-1c369514="" class="light-icon-more icon-next-arrow"></i>-->
-<!--                                    </span>-->
-<!--                                  </div>-->
+                                </div>
+                                <h3 class="heading-tertiary-list">{{ item.title }}</h3>
+                              </div>
+                              <div class="extend">
+                                <div class="button">
+                                  <div style="margin-left:12px">
+                                    <span style="font-size: 36px;line-height: 1;">
 
-<!--                                  <div style="margin-right:12px">-->
-<!--                                    <span class="value">${{ item.price }}</span>-->
-<!--                                  </div>-->
-<!--                                </div>-->
-<!--                              </div>-->
-<!--                            </a>-->
-<!--                          </router-link>-->
-<!--                        </div>-->
-<!--                      </div>-->
-<!--                      <div v-else>-->
-<!--                        <div @mouseover="dowmloadover(index)" @mouseleave="downloadleave(index)"-->
-<!--                             v-if="item.status.includes('published')">-->
-<!--                          <router-link :to="'/list/' + item.id">-->
-<!--                            <a class="macwk-app border white cursor-pointer padding-xl">-->
+                                      <i data-v-1c369514="" class="light-icon-more icon-next-arrow"></i>
+                                    </span>
+                                  </div>
 
-<!--                              <div data-v-2661c954="" class="soft-card">-->
-<!--                                <div data-v-2661c954="" class="li-card-img-div">-->
-<!--                                  <img data-v-2661c954="" :src="item.thumb" class="budongImg img72 dingweiImg"/>-->
-<!--                                  <transition name="fade">-->
-<!--                                    <img data-v-2661c954="" v-if="isAcitive === index" :src="item.thumb"-->
-<!--                                         class="gaosiImg img72 dingweiImg"/>-->
-<!--                                  </transition>-->
-<!--                                </div>-->
-<!--                                <div data-v-2661c954="" class="size-12 text-B6BABF margin-top-90"-->
-<!--                                     style="min-height: 20px;">-->
-<!--                                  <span data-v-2661c954="">{{ item.subhead }}</span>-->
-<!--                                </div>-->
-<!--                                <div data-v-2661c954="" class="margin-top size-18 text-bold  text-block card-hover-red">-->
-<!--                                  <span data-v-2661c954="">{{ item.title }} </span>-->
-<!--                                </div>-->
-<!--                                <div data-v-2661c954="" class="margin-top1 size-14 text-B6BABF limitText">-->
-<!--                                  <span data-v-2661c954="">{{ item.intro }}</span>-->
-<!--                                </div>-->
-<!--                                <div data-v-2661c954="" class="margin-top2 text-B6BABF flex-row size-12"-->
-<!--                                     style=" bottom: 20px; width: 100%;">-->
-<!--                                  <div data-v-2661c954="">-->
-<!--                                    <i data-v-2661c954="" class="el-icon-view"></i>-->
-<!--                                    <span data-v-2661c954="">34.5k</span>-->
-<!--                                  </div>-->
-<!--                                  <div data-v-2661c954="" style="margin-left: 6px;" class="margin-left">-->
-<!--                                    <i data-v-2661c954="" class="el-icon-download"></i>-->
-<!--                                    <span data-v-2661c954="">1500</span>-->
-<!--                                  </div>-->
-<!--                                  <div data-v-2661c954="" style="position: absolute; right: 35px;">-->
-<!--                                    <span v-if="item.createTime != null"> {{ formatDate(item.createTime) }}</span>-->
-<!--                                    <span v-else> {{ formatDate(item.addTime) }}</span>-->
-<!--                                  </div>-->
-<!--                                </div>-->
-<!--                              </div>-->
+                                  <div style="margin-right:12px">
+                                    <span class="value">${{ item.price }}</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </router-link>
+                        </div>
+                      </div>
+                      <div v-else>
+                        <div @mouseover="dowmloadover(index)" @mouseleave="downloadleave(index)"
+                             v-if="item.status.includes('published')">
+                          <router-link :to="'/list/' + item.id">
+                            <a class="macwk-app border white cursor-pointer padding-xl">
 
-<!--                            </a>-->
+                              <div data-v-2661c954="" class="soft-card">
+                                <div data-v-2661c954="" class="li-card-img-div">
+                                  <img data-v-2661c954="" :src="item.thumb" class="budongImg img72 dingweiImg"/>
+                                  <transition name="fade">
+                                    <img data-v-2661c954="" v-if="isAcitive === index" :src="item.thumb"
+                                         class="gaosiImg img72 dingweiImg"/>
+                                  </transition>
+                                </div>
+                                <div data-v-2661c954="" class="size-12 text-B6BABF margin-top-90"
+                                     style="min-height: 20px;">
+                                  <span data-v-2661c954="">{{ item.subhead }}</span>
+                                </div>
+                                <div data-v-2661c954="" class="margin-top size-18 text-bold  text-block card-hover-red">
+                                  <span data-v-2661c954="">{{ item.title }} </span>
+                                </div>
+                                <div data-v-2661c954="" class="margin-top1 size-14 text-B6BABF limitText">
+                                  <span data-v-2661c954="">{{ item.intro }}</span>
+                                </div>
+                                <div data-v-2661c954="" class="margin-top2 text-B6BABF flex-row size-12"
+                                     style=" bottom: 20px; width: 100%;">
+                                  <div data-v-2661c954="">
+                                    <i data-v-2661c954="" class="el-icon-view"></i>
+                                    <span data-v-2661c954="">34.5k</span>
+                                  </div>
+                                  <div data-v-2661c954="" style="margin-left: 6px;" class="margin-left">
+                                    <i data-v-2661c954="" class="el-icon-download"></i>
+                                    <span data-v-2661c954="">1500</span>
+                                  </div>
+                                  <div data-v-2661c954="" style="position: absolute; right: 35px;">
+                                    <span v-if="item.createTime != null"> {{ formatDate(item.createTime) }}</span>
+                                    <span v-else> {{ formatDate(item.addTime) }}</span>
+                                  </div>
+                                </div>
+                              </div>
 
-<!--                          </router-link>-->
-<!--                        </div>-->
-<!--                      </div>-->
-<!--                    </div>-->
-<!--                  </div>-->
-<!--                </div>-->
+                            </a>
+
+                          </router-link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
               </div>
               <div class="white dk py-7">
@@ -1028,8 +1028,8 @@ export default {
 
 .img72,
 .imgQueXing3 {
-  width: 72px;
-  height: 72px;
+  width: 226px;
+  height: 120px;
 }
 
 .margin-top-90 {

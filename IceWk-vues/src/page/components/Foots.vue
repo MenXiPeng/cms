@@ -92,7 +92,7 @@
           data-v-6dd0b122=""
           data-v-ea53b530=""
         >
-          <title data-v-6dd0b122="">IceCMS</title>
+          <title data-v-6dd0b122="">BitOpen</title>
           <defs data-v-6dd0b122="">
             <lineargradient
               x1="50%"
@@ -195,15 +195,15 @@
         <router-link to="/Privacy">
           <a class="nav-link" data-v-ea53b530="">隐私 </a>
         </router-link>
-        <a href="https://macwk.com/version" class="nav-link" data-v-ea53b530=""
-          >版本检测
-        </a>
-        <a
-          href="https://macwk.com/changelogs"
-          class="nav-link"
-          data-v-ea53b530=""
-          >更新日志
-        </a>
+<!--        <a href="https://macwk.com/version" class="nav-link" data-v-ea53b530=""-->
+<!--          >版本检测-->
+<!--        </a>-->
+<!--        <a-->
+<!--          href="https://macwk.com/changelogs"-->
+<!--          class="nav-link"-->
+<!--          data-v-ea53b530=""-->
+<!--          >更新日志-->
+<!--        </a>-->
       </div>
       <div class="copyright" data-v-ea53b530="">
         <p class="mb-0" data-v-ea53b530="">
